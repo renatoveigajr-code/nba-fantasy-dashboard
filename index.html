@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NBA Fantasy Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>NBA Fantasy Dashboard</h1>
+    <div class="controls">
+      <label>
+        Liga
+        <select id="league">
+          <option value="nba">NBA</option>
+          <option value="nba-summer-las-vegas">Summer League</option>
+        </select>
+      </label>
+      <label>
+        Data
+        <input type="date" id="date" />
+      </label>
+      <button id="search">Buscar</button>
+    </div>
+  </header>
+
+  <div id="status" class="status" hidden></div>
+
+  <section id="games" class="games"></section>
+  <section id="stats"></section>
+
+  <script src="app.js"></script>
+</body>
+</html>
